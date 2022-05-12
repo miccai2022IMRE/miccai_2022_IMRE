@@ -11,11 +11,9 @@ import matplotlib.pyplot as plt
 import torch.nn.functional as F
 from Constants import device, train_h_folder, val_h_folder
 from Models.PHER import PHER, Var_Encoder
-from Models.Baseline_VAE import Baseline_VAE
 from torch.utils.data import DataLoader
 #from Dataset import CustData
 import Dataset as Ds
-import Baseline_Dataset as BsD
 import pickle
 import re
 

@@ -6,7 +6,6 @@ import pybobyqa
 import Constants as ps
 from torch.utils.data import DataLoader
 from Models.PHER import PHER, Var_Encoder
-from Models.Baseline_VAE import Baseline_VAE
 from Utils import UtilityFunctions
 import os
 import scipy
@@ -17,7 +16,7 @@ from Dataset import CustData
 from Utils import UtilityFunctions
 import Utils as ut
 import pickle
-from SOM_Classification import classify
+
 
 def generate_bsp(H, xmin, xmax, SNR, egm, option):
     eg_len = egm.shape[1]
